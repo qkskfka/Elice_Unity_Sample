@@ -17,7 +17,7 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'if exist Builds rmdir /s /q Builds'
-                bat 'call UnityProject\\build_windows.bat'
+                bat 'call UnityProject\\build_window.bat'
             }
         }
     }
